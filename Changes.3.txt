@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ilayda G?neri</title>
+</head>
+<body>
+<p>Ilayda G?neri</p>
+<p>210104017</p>
+</body>
+</html>
+<!DOCUTYPE html>
+<!--
+To change this license header,choose License Headers in Project Properties.
+To change this template file,choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<title>TODO supply the title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body text ="#189443" bgcolor ="#F1F5F3">
+<h1> <font face ="verdana" color ="FF2222"> DANGER ZONE,DO NOT ENTER THIS WEBSITE!</h1>
+<h2> No No,Just Kidding,you are in the right place to examine my researches:)</h2>
+<p> I hope you will have a great time during in this page </p>
+</body>
+</html>
