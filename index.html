@@ -6,40 +6,33 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body{
-                background-color: blue;
-                }
+                background-color: forestgreen;
+            }
         </style>
+        <title>Homework-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body link="white">
-        
-        <h2><font color="white" size="4" face="miriam fixed" >
-            A problem has been detected and Windows has been shut down to prevent damage to your computer.<br>
-            <br>
-            MEMORY_MANAGEMENT <br>
-            If this is the first time you've seen this stop error screen and restart your computer.If this screen appears again,follow these steps: <br>
-            <br>
-            If Parameter1==0,an executive worker item was found in memory which must not contain such items.Usually this is memory being freed.This is usually caused by a device driver that has not cleaned up properly before freeding memory.<br>
-            <br>
-            If Parameter1==1,an attempt was made to queue an executive worker item with a usermode execution routine.<br>
-            <br>
-            Technical Information:<br>
-            **STOP : 0x000000E4<br>
-            <br>
-            Beginning dump of physical memory..<br>
-            Physical memory dump completed.<br>
-            <br>
-            Contact your system administrator or technical support group for further assistant.<br>
-            
-        </h2>
-        <h2> <font size="4">If you got the idea,you can click on; </h2>
-        <a onmouseover="this.style.color='black'"  
-           onmouseout="this.style.color='white'"
-           href="2index.html" target="_self"> technicalsupport.html </a><br>
-           <br>
+    <body>
+        <form action="demo_form.asp">
+            User Name:      <br>            <input type="text" name="User Name"> <br>
+            Password with 8 Character: <br>  <input type="password"  name="Password with 8 character"> <br>
+            <input type="submit">
+            <h2><font color="white" face="French Script MT" size="8"> What is your favorite book? </h2>
+            <input type="radio" name="Book" value="Crime and Punishment"> Crime and Punishment <br>
+            <input type="radio" name="Book" value="Robinson Crusoe"> Robinson Crusoe <BR>
+            <input type="radio" name="Book" value="50 Shades of Grey"> 50 Shades of Grey <br>
+            <input type="radio" name="Book" value="Les Misérables"> Les Misérables <br>
+            <input type="radio" name="Book" value="To Kill a Mockingbird"> To Kill a Mockingbird <br>
+            <input type="radio" name="Book" value="Harry Potter Series"> Harry Potter Series <br>
+            <input type="radio" name="Book" value="The Little Prince"> The Little Prince <br>
+            <input type="radio" name="Book" value="Tintenherz"> Tintenherz <br>
+            <input type="radio" name="Book" value="Also Sprach Zarathustra"> Also Sprach Zarathustra <br>
+            <input type="radio" name="Book" value="Others"> Other <br>
+        </form>
+        <h3><font color="lightpink"> If your favorite one is your only book that you read,then please start to read something.NOW.</h3>
+    </body>
     </body>
 </html>
