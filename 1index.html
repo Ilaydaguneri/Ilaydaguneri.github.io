@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
         <title></title>
@@ -7,12 +13,19 @@
             body{
                 background-color: blue;
                 }
+                #inner {
+                background-color: blue;
+                cursor: pointer;
+                }
         </style>
     </head>
     <body link="white">
         
-        <h2><font color="white" size="4" face="miriam fixed" >
+        <h2><font color="white" size="5" face="miriam fixed" >
             A problem has been detected and Windows has been shut down to prevent damage to your computer.<br>
+            <br>
+            MEMORY_MANAGEMENT <br>
+            If this is the first time you've seen this stop error screen and restart your computer.If this screen appears again,follow these steps: <br>
             <br>
             If Parameter1==0,an executive worker item was found in memory which must not contain such items.Usually this is memory being freed.This is usually caused by a device driver that has not cleaned up properly before freeding memory.<br>
             <br>
@@ -30,7 +43,15 @@
         <h2> <font size="4">If you got the idea,you can click on; </h2>
         <a onmouseover="this.style.color='black'"  
            onmouseout="this.style.color='white'"
-           href="2index.html" target="_self"> technicalsupport.html </a><br>
+           href="4index.html" target="_self">technicalsupport.html</a><br>
+           
            <br>
+           <script>
+         $('#inner').click (
+           function (){
+           window.location = "http://Homework 10.03.16" ;
+           }
+           );
+        </script>
     </body>
 </html>
