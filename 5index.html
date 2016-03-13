@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>factorial(n)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            function multiplication(a,b) {
+                var multiple=0 ; 
+                multiple= a * b ;
+                return multiple ;
+            }
+            function division (c,d){
+                var div=0 ;
+                div= c / d ;
+                return div ;
+            }
+            function substraction (k,l){
+                var subs=0 ;
+                subs = k-l ;
+                return subs;
+            }
+            function summation (r,s){
+                var sum=0;
+                sum= r-(-s) ;
+                return sum;
+            }       
+        </script>
+        <style>
+            body{
+                background-color: cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+            <form>
+                <input type="number" id="num1" value="" placeholder="Choose Any Number"/> * 
+                <input type="number" id="num2" value="" placeholder="By Using Arrows"/>
+                <input type="text" id="mult" placeholder="Here goes the result" />
+                <input type="button" value="Go"
+                 onmouseover="calculate1();"
+                       /><br>
+                <br>
+                <input type="number" id="num3" value="" placeholder="Choose Any Number" /> / 
+                <input type="number" id="num4" value="" placeholder="By Using Arrows"/>
+                <input type="text" id="div" placeholder="Here Goes To Result"/>
+                 <input type="button" value="Go"
+                 onmouseover="calculate2();"
+                 /><br>
+                 <br>
+                 <input type="number" id="num5" value="" placeholder="Choose Any Number"/> - 
+                 <input type="number" id="num6" value="" placeholder="By Using Arrows"/>
+                 <input type="text"id="subs" placeholder="Here Goes To Result"/>
+                 <input type="button" value="Go"
+                  onmouseover="calculate3();"
+                 /><br>
+                 <br>
+                 <input type="number" id="num7" value="" placeholder="Choose Any Number"/> + 
+                 <input type="number" id="num8" value="" placeholder="By Using Arrows"/>
+                 <input type="text"id="sum" placeholder="Here Goes To Result"/>
+                 <input type="button" value="Go"
+                  onmouseover="calculate4();"
+                 /><br>  
+                 <br>
+            </form>
+        </div>       
+        <script>
+            function calculate1(){
+                var x= $('#num1').val();
+                var y= $('#num2').val();
+                var add= multiplication(x,y);
+                $('#mult').val(add);
+            }
+            function calculate2() {
+                var z= $ ('#num3').val();
+                var t= $ ('#num4').val();
+                var div= division (z,t);
+                $('#div').val(div);
+            }
+            function calculate3(){
+                var o= $ ('#num5').val();
+                var p= $ ('#num6').val();
+                var subs= substraction (o,p);
+                $('#subs').val(subs);
+            }
+            function calculate4(){
+                var h= $ ('#num7').val();
+                var i= $ ('#num8').val();
+                var sum= summation (h,i);
+                $('#sum').val(sum);
+            }
+       </script>    
+    </body>
+</html>
