@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework-5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+function check()
+            {
+         var in1 = $('#input1').val(); //we have two possible password and fuction control that if password1 
+         var password1 = 9009 ;         // OR password2 is true..
+         var password2 = 4224 ;
+            if( in1!= password1 && in1!=password2){
+             $('#output').html("Really,Genius? "); 
+            }
+         else {
+             $('#output').html("OMG,You've Found It!");
+        }
+            }      
+        </script>
+
+    </head>
+    <body>
+                <style>
+            body {
+                background-image: url("https://behapy.s3.amazonaws.com/66/18/196618/default.jpg");
+                background-size : fit;
+            }
+            #Try {
+            position: absolute;
+            left: 45% ;
+            top: 50%;
+            font-size: 160%;
+            }
+            #input1 {
+            position: absolute;
+            left: 30%;
+            top: 50%;
+            font-size: 160%;
+            }
+            #output {
+            position: absolute;
+            left: 30%;
+            top: 55%;
+            font-size: 200%;
+            }
+            }
+        </style>
+    <div>
+            <form>
+         <input type="password" id="input1">
+        <input type="button" id="Try" value="Try" onclick="check();">
+            </form>
+        <div id="output"></div>
+        </div>  
+    </body>
+</html>
