@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>        
+
+        <title>JSON Array</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+             background-image: url("https://images8.alphacoders.com/539/539384.jpg");
+             background-size:cover ;
+             font-size: 100px ;
+             font-style: Comic Sans MS;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id = "avg">
+            
+        </div>
+        
+        <script>
+            
+            var students = {students:[
+                    {"name":"Ilayda", "age":22, "height":170 },
+                    {"name":"Mustafa", "age":22, "height":175 },
+                    {"name":"Kerem", "age":21, "height":180 }]};
+            var avgAge = calcAvgAge(students);
+            $('#avg').append("Average Age of Students: " + avgAge + "<br>");
+            var avgHeight = calcAvgHeight(students);
+            $('#avg').append("Average Height of Students: " + avgHeight + "<br>");
+            var avgBookread = calcAvgBookread (students);
+            $('#avg').append("Average Book That Students' Read: " + avgBookread + "<br>");
+            function calcAvgAge(obj){
+                var totalAge = 0;
+                for(var A = 0; A < obj.students.length; A++){
+                    totalAge += obj.students[A].age;
+                }
+                return totalAge / obj.students.length;
+            }
+            
+           function calcAvgHeight(obj){
+        var totalHeight = 0;
+        for(var B = 0; B < obj.students.length; B++){
+         totalHeight += obj.students[B].height;
+       }
+        return totalHeight / obj.students.length;
+            }
+            </script>
+        
+    </body>
+</html>
